@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <meta name="author" content="Shane Steven Martos"> 
+ <meta name="description" content="Shane's first blog page"> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <meta property="og:title" content="My First Blog Page"/> 
+ <meta property="og:type" content="Website"/> 
+ <meta property="og:image" content="https://example.com/me.jpg"/> 
+ <meta property="og:url" content="https://example.com"/> 
+ <meta property="og:description" content="Shane's first blog page"/> 
+ <meta property="og:locale" content="en_US"/> 
+ <meta property="og:site_name" content="Midterm Activity 1"/> 
+
+ <style>
+    body{
+        text-align: center;
+    }
+    h1, h2{
+        color:darkred
+    }
+ </style>
+
+
+<body>
+<header>
+    <img src="MicrosoftTeams-image (2).png">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Location</a>
+        <a href="#">Blog</a>
+    </nav>
+    <h1>Book a Trip</h1>
+</header>
+<main>
+    <label >Book a Date</label>
+    <input type="date" name="date" min="2022-10-20" max="2022-12-31"> <br>
+    <label id="">Number of People</label> 
+   <input type="range" name="people" min="1" max="10" value="2" oninput="rangeValue.innerText = this.value"><span id="rangeValue">2</span><br><br>
+   Location 
+   <input list="Location">
+   <datalist id="Location">
+    <option value="Uptown"></option>
+    <option value="Downtown"></option>
+   </datalist></br>
+
+  <br>
+   <video width="320" height="240" controls>
+    <source src="music.ogg" type="audio/ogg">
+    <source src="haha.mp4.mp4"  type="audio/mpeg">
+</video>
+<br>
+<br>
+
+<label for="rating">Rating</label>
+
+<input type="range" min="1" max="5" value="3" step="1" list="rate" id="rating">
+<datalist id="rate">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</datalist><br><br>
+
+
+    <br>
+    <input type="checkbox" id="checked">
+    <label for="checked">I agree to the cancellation policy</label>
+</br>
+
+<br>
+<input type="submit"value="Book Table">
+</br>
+   
+
+</main>
+<footer>
+    <p>Copyright @ 2022, Shane Steven S. Martos. Made with ♥︎</p>
+</footer>
+</body>
